@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url(/project8/images/background.jpeg);
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+  align-items: center;
+  overflow: hidden;
+}
+
+.game {
+  background: linear-gradient(to top, #00731B, #09DC3A, #4FFF78);
+  height: 95vh;
+  width: 68vw;
+  display: grid;
+  grid-template-columns: repeat(18, 2.3rem);
+  grid-template-rows: repeat(18, 2.3rem);
+  margin: 1rem;
+  position: relative;
+}
+
+.head {
+  background: linear-gradient(#6C0606, #C30000, #FF3737, #A40046, #FF006D);
+  border-radius: 25%;
+  /* height: 2.2rem;
+  width: 2.2rem; */
+  margin: 0 0;
+}
+
+.snakeBody {
+  background: purple;
+/*   height: 2rem;
+width: 2rem; */
+  background: linear-gradient(#7F0000, #F30505, #FF4E4E, #FF6A0A);
+  border-radius: 0.3rem;
+  border: 0.59vmin solid black;
+  margin: 0 0;
+}
+
+.food {
+/*   height: 2rem;
+width: 2rem; */
+  background: linear-gradient(#7001F6, #3F01F6, #3104B5, #20066C);
+  border-radius: 0.2rem;
+  margin: 0 0;
+}
+
+.gameOverBox {
+  padding: 1rem 3rem;
+  border-radius: 1rem;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: lightsteelblue;
+  border: 2px solid black;
+  width: 36vw;
+  height: 20vh;
+  margin-top: 0;
+  position: absolute;
+  top: 35vmin;
+  left: 40vmin;
+
+}
+
+.playAgainBtn {
+  font-size: 1.3rem;
+  border: none;
+  outline: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem 3rem;
+  background: white;
+}
+
+.scorePara {
+  position: absolute;
+  right: 1rem;
+  top: 12vh;
+  font-size: 5vh;
+}
+
+.hiScorePara {
+  font-size: 5vh;
+  position: absolute;
+  top: 5vh;
+  right: 1rem;
+}
+
+.controlorsBox {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 15rem;
+  right:1rem;
+}
+
+.controlorsBox button {
+  font-size: 1.5rem;
+  border: 1px solid black;
+  outline: none;
+  border-radius: 0.4rem;
+  height: 4rem;
+  width: 4rem;
+  text-align: center;
+  margin:0.2rem;
+}
+
+.optionBox{
+  display: flex;
+  outline: none;
+  padding:0.25rem 1rem;
+  border-radius: 0.5rem;
+  border:none;
+  background: whitesmoke;
+  font-size: 1.3rem;
+  position: absolute;
+  top: 6rem;
+  right:1rem;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .game{
+    width:93vw;
+  }
+  
+}
