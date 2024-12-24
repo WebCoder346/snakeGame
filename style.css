@@ -4,7 +4,7 @@
 }
 
 body {
-  background: url(/project8/images/background.jpeg);
+  background: url(background.jpeg);
   background-repeat: no-repeat;
   background-size: 100vw 100vh;
   align-items: center;
